@@ -286,6 +286,33 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.team-background-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.team-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-text-grey-color);
+}
+.team-background-icon:hover .team-icon,
+.team-background-icon:focus .team-icon {
+  fill: var(--primary-text-white-color);
+}
+.team-background-icon:hover,
+.team-background-icon:focus {
+  background-color: var(--accent-color);
+}
+.team-icon-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
 /* ============ Наша команда конец =========== */
 
 /* ============ СТУДИЯ конец ============ */
@@ -345,6 +372,11 @@ body {
   margin-top: 30px;
   margin-left: 30px;
 }
+.projects-list-item:focus,
+.projects-list-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .content-projects {
   border: 1px solid #eeeeee;
   border-top: none;
@@ -369,7 +401,12 @@ body {
 /* ============ Футер ============ */
 .footer-container {
   display: flex;
+  align-items: baseline;
+}
+.left-address-container {
+  display: flex;
   flex-direction: column;
+  margin-right: 70px;
 }
 .logo-footer {
   color: var(--primary-text-white-color);
@@ -402,4 +439,42 @@ body {
 .link.address:hover {
   color: var(--primary-text-white-color);
 }
+.join-text {
+  color: var(--primary-text-white-color);
+  font-family: var(--title-font-family);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.right-address-container {
+  width: 206px;
+  height: 80px;
+}
+.join-background-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.join-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-text-white-color);
+}
+.join-background-icon:hover,
+.join-background-icon:focus {
+  background-color: var(--accent-color);
+}
+.join-icon-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
 /* ============ Футер конец ============ */

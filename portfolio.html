@@ -44,14 +44,20 @@
         </nav>
         <ul class="list header-list-contact">
           <li class="header-item-contact">
-            <a class="link contact" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="link contact" href="mailto:info@devstudio.com">
+              <svg class="contact-icon" width="16" height="12">
+                <use href="../images/symbol-defs.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="header-item-contact">
-            <a class="link contact" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+            <a class="link contact" href="tel:+380961111111">
+              <svg class="contact-icon" width="10" height="16">
+                <use href="../images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -215,7 +221,8 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container footer-container">
-        <a class="logo-footer link" href="./"
+        <div class="left-address-container">
+          <a class="logo-footer link" href="./"
           ><span class="first-word-logo">Web</span>Studio</a
         >
         <address class="address-container">
@@ -230,16 +237,55 @@
               >
             </li>
             <li class="address-item">
-              <a class="link address" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+              <a class="link address" href="mailto:info@example.com"
+                >info@example.com</a
               >
             </li>
             <li class="address-item">
-              <a class="link address" href="tel:+380961111111"
-                >+38 096 111 11 11</a
+              <a class="link address" href="tel:+380991111111"
+                >+38 099 111 11 11</a
               >
             </li>
           </ul>
+        </div>
+        
+          <div class="right-address-container">
+            <p class="join-text address">присоединяйтесь</p>
+            <ul class="list join-icon-list">
+              <li>
+                <a class="join-background-icon" href=""
+                  ><svg class="join-icon">
+                    <use
+                      href="../images/symbol-defs.svg#icon-instagram"
+                    ></use></svg
+                ></a>
+              </li>
+              <li>
+                <a class="join-background-icon" href=""
+                  ><svg class="join-icon">
+                    <use
+                      href="../images/symbol-defs.svg#icon-twitter"
+                    ></use></svg
+                ></a>
+              </li>
+              <li>
+                <a class="join-background-icon" href=""
+                  ><svg class="join-icon">
+                    <use
+                      href="../images/symbol-defs.svg#icon-facebook"
+                    ></use></svg
+                ></a>
+              </li>
+              <li>
+                <a class="join-background-icon" href=""
+                  ><svg class="join-icon">
+                    <use
+                      href="../images/symbol-defs.svg#icon-linkedin"
+                    ></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
         </address>
       </div>
     </footer>
